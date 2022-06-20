@@ -1,0 +1,16 @@
+<script>
+    const altura = prompt("informe altura :")
+    const peso = prompt("informe o peso :")
+    const imc = altura / peso ** 2
+
+    if (imc <= 18.5) {
+        document.write(`subPeso`)
+    } else if (imc > 25 && imc < 25) {
+        document.write(`normal`)
+    } else if (imc > 25 && imc > 30) {
+        document.write(`sobrePeso`)
+    } else {
+        document.write(`obeso`)
+    }
+
+</script>

@@ -1,0 +1,16 @@
+<script>
+    const preco_atual = prompt("Preço Atual :")
+
+    let acrescimo
+    if (preco_atual <= 280) acrescimo = 20
+    else if (preco_atual <= 700) acrescimo = 15
+    else if (preco_atual <= 1000) acrescimo = 10
+    else acrescimo = 5
+
+    const aumento = preco_atual * acrescimo / 100
+    const precoFinal = preco_atual + aumento
+    document.write(`preço atual${preco_atual.toFixed(2)}`)
+    document.write(`preço atual${acrescimo.toFixed(2)}`)
+    document.write(`preço atual${aumento.toFixed(2)}`)
+    document.write(`preço atual${precoFinal.toFixed(2)}`)
+</script>
