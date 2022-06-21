@@ -4,7 +4,8 @@
     //entrada
     const ano = Number(prompt("informe o ano :"))
 
-    if (ano % 4 > 0) {
+    //processamento
+    if( (ano%400 == 0) || (ano%4==0 && ano%100!= 0) )  {
         document.write(`ano comum`)
     }
     else {

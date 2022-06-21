@@ -1,11 +1,12 @@
 <script>
     //testaLados - Receba os três lados de um triângulo. Informe se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno. Dica: pesquise sobre a regra para saber se os lados formam um triângulo e também sobre os tipos de triângulos.
 
-    //processamento
+    //entrada
     const l1 = Number(prompt("Lado 1"))
     const l2 = Number(prompt("Lado 2"))
     const l3 = Number(prompt("Lado 3"))
 
+    //processamento
     if (l1 + l2 > l3 && l3 + l2 > l1 && l1 + l3 > l2) {
         if (l1 == l2 && l1 == l3 && l3 == l2) {
             document.write(`</br>É um triângulo equilátero`)
@@ -16,7 +17,8 @@
         else {
             document.write(`É um triângulo escaleno`)
         }
-    } else {
+    }
+    else {
         document.write(`Não é um triângulo`)
 
 

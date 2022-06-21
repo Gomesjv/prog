@@ -1,12 +1,27 @@
 <script>
-    const a = Number(prompt("informe o valor a :")) 
-    const b = Number(prompt("informe o valor b :")) 
-    const c = Number(prompt("informe o valor c :")) 
+/*Calcule as raízes de uma equação do segundo grau, na forma ax2 + bx + c. A função recebe a, b e c e faz as consistências, informando ao usuário nas seguintes situações:
+- Se o usuário informar o valor de A igual a zero é uma equação do 1o grau.
+- Se o delta calculado for negativo, a equação não possui raízes reais.
+- Se o delta calculado for igual a zero a equação possui apenas uma
+raiz real. 
+- Se o delta for positivo, a equação possui duas raízes reais.
+*/
+    //Entradas
+    const a = Number(prompt("informe o valor a :"))
+    const b = Number(prompt("informe o valor b :"))
+    const c = Number(prompt("informe o valor c :"))
 
-   let conceito
-   
-    if(b ** 2 - 4 * a * c < 0) conceito = naoBaskara
-    else if ()
-   
-    
+    //processamento
+    let conceito
+    const delta = Math.sqrt((b ** 2) - (4 * a * c))
+    const final = -b - (delta2 / 2 * a)
+    const final2 = -b + (delta2 / 2 * a)
+
+    if (a === 0) conceito = "é uma equação do 1o grau"
+    else if (delta < 0) conceito = "a equação não possui raízes reais"
+    else if (delta === 0) conceito = "a equação possui apenas uma raiz real"
+    else conceito = "a equação possui duas raízes reais"
+
+    //saida
+    document.write(`resposta é: ${conceito}`)
 </script>

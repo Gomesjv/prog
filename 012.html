@@ -1,6 +1,10 @@
 <script>
-    const porte = prompt("informe o porte do cachorro :")
+   
+   //entrada
+   const porte = prompt("informe o porte do cachorro :")
     const idade = parseInt(prompt("informe a idade do cachorro :"))
+   
+    //processamento
     let fator
     if (porte === "pequeno") {
         fator = 5
@@ -12,6 +16,8 @@
         fator = 7
     }
     const grande = idade * fator
+
+    //saída
     document.write(`o seu cao e ${grande}`)
 
 </script>

@@ -1,16 +1,21 @@
 <script>
     //Recebe a média anual do aluno, a quantidade de faltas e o número de aulas ministradas na disciplina. Se o aluno tiver mais de 25% de faltas, está automaticamente reprovado por faltas (RF).  Se tiver média abaixo de 7.0, porém com frequência igual ou superior a 75%, está no Exame Final (EF). Se tiver média acima de 7.0 e frequência igual ou superior a 75% está aprovado (AP). Informe a situação do aluno.
 
+    //entrada
     const aulas = Number(prompt("aulas dadas :"))
     const media = Number(prompt("media da pessoa"))
     const faltas = Number(prompt("faltas"))
 
+    //processamento
+    
+    let conceito
+   
     const porcentagemFaltas = (faltas / aulas) * 100
 
-    if (porcentagemFaltas > 25) document.write("o aluno foi reprovado por faltas")
+    if (porcentagemFaltas > 25)conceito = ("o aluno foi reprovado por faltas")
     else
-        if (media >= 7) document.write("o aluno foi aprovado")
+        if (media >= 7) conceito = ("o aluno foi aprovado")
         else
-            document.write("ficou em exame")
+            document.write( `o aluno esta em ${conceito}`)
 
 </script>
