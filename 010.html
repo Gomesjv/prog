@@ -7,15 +7,13 @@
     const faltas = Number(prompt("faltas"))
 
     //processamento
-    
+
     let conceito
-   
+
     const porcentagemFaltas = (faltas / aulas) * 100
 
-    if (porcentagemFaltas > 25)conceito = ("o aluno foi reprovado por faltas")
-    else
-        if (media >= 7) conceito = ("o aluno foi aprovado")
-        else
-            document.write( `o aluno esta em ${conceito}`)
+    if (porcentagemFaltas > 25) conceito = ("o aluno foi reprovado por faltas")
+    else if (media >= 7) conceito = ("o aluno foi aprovado")
+    else document.write(`o aluno esta em ${conceito}`)
 
 </script>
