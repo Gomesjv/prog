@@ -1,21 +1,22 @@
 <script>
-    const nota = prompt("informe a nota :")
+    /*Converta a nota para conceito, conforme a tabela abaixo:
+     Nota                     Conceito
+     Entre 10.0 e 9.0            A
+     Entre 8.9 e 8.0             B
+     Entre 7.9 e 7.0             C
+     Entre 6.9 e 6.0             D
+     Entre 5.9 e zero            E
+     */
+
+
+    const nota = Number(prompt("informe a nota :"))
     let conceito
-    if (nota >= 9) {
-        conceito = A
-    }
-    if (nota >= 8.9 && nota < 8) {
-        conceito = B
-    }
-    if (nota >= 7.9 && nots < 7) {
-        conceito = C
-    }
-    if (nota >= 6.9 && nota < 6) {
-        conceito = D
-    } else (nota >= 5.9 && nots < 0)
-    document.write(`E`)
+    if (nota >= 9.0) conceito = "A"
+    else if (nota >= 8.0) conceito = "B"
+    else if (nota >= 7.0) conceito = "C"
+    else if (nota >= 6.0) conceito = "D"
+    else conceito = "E"
 
-
-
+    document.write(`${conceito}`)
 
 </script>
