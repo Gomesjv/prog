@@ -5,9 +5,10 @@
     const numerosA = parseInt(prompt("informe o numeroA : "))
     const numerosB = parseInt(prompt("informe o numeroB : "))
 
-    if(numerosA > numerosB){ document.write(`${numerosA} e maior`)
-    }
-    else{
-        document.write(`${numerosB} e maior`)
-    }
+    let conceito
+    if (numerosA > numerosB)conceito = "numeroA e maior"
+    else conceito = "numeroB e maior"
+
+    if (numerosA > numerosB) document.write(`${conceito} numero ${numerosA}`)
+    else document.write(`${conceito} numero ${numerosB}`)
 </script>

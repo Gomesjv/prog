@@ -8,13 +8,8 @@
 
     //processamento
     let conceito
-    if (n1 > n2 && n1 > n3) {
-        document.write(`${n1}`)
-    }
-    else if (n2 > n1 && n2 > n3) {
-        document.write(`${n2}`)
-    }
-    else if (n3 > n1 && n3 > n2) {
-        document.write(`${n3}`)
-    }
+    if (n1 > n2 && n1 > n3) conceito = "primeiro"
+    else if (n2 > n1 && n2 > n3) conceito = "segundo"
+    else conceito = "terceiro"
+    document.write(`o ${conceito}`)
 </script>

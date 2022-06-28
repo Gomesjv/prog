@@ -3,13 +3,10 @@
 
     //processamento
     const anoQueNasceu = parseInt(prompt("informe o ano que nasceu :"))
-
-    const calculoDeAnos = anoQueNasceu - 2022
+    const calculoDeAnos = 2022 - anoQueNasceu
    
-    if (calculoDeAnos >= 16){ document.write(`ele ja pode votar`)
-    }
-    else{
-        //saída
-        document.write(`ela nao pode votar`)
-     }
+    let conceito 
+    if (calculoDeAnos >= 16) conceito = "voce pode votar"
+    else conceito = "voce nao pode voltar"
+     document.write(`${conceito}`)
 </script>

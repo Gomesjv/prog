@@ -2,18 +2,15 @@
     //menor3 - Recebe três valores numéricos, e retorna o menor dos três.
 
     //entrada
-    const numero = Number(prompt("informe o 1 numero"))
+    const numero1 = Number(prompt("informe o 1 numero"))
     const numero2 = Number(prompt("informe o 2 numero"))
     const numero3 = Number(prompt("informe o 3 numero"))
 
     //processamento
-    if (numero < numero2 && numero < numero3) {
-        document.write(`${numero}`)
-    }
-    else if (numero2 < numero && numero2 < numero3) {
-        document.write(`${numero2}`)
-    }
-    else if (numero3 < numero && numero3 < numero2) {
-        document.write(`${numero3}`)
-    }
+    let conceito 
+   
+    if (numero1 < numero2 && numero1 < numero3)  conceito = "numero 1"
+    else if (numero2 < numero1 && numero2 < numero3) conceito = "numero 2"
+    else conceito = "numero 3"
+    document.write(`${conceito}`)
 </script>

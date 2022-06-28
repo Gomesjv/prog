@@ -3,12 +3,17 @@
 
     //entrada
     const nota1 = Number(prompt("nota do little brother antes  :"))
-    const nota2 = Number(prompt("nota do little brother depois   :"))    
+    const nota2 = Number(prompt("nota do little brother depois   :"))
 
     //processamento
-    const notafinal = (nota1 - nota2) / 4
-    if (notafinal => nota1)
     
+
+    const notafinal = nota2 - nota1
+    let acrescimo
+
+    if (notafinal > 0) acrescimo = notafinal / 4
+    else acrescimo = 0
+
     //saida
-    document.write(`adicionad:${notafinal}para big bother`)
+    document.write(`adicionad:${acrescimo}para big bother`)
 </script>

@@ -3,12 +3,17 @@
 
     //processamento
     const idade = parseInt(prompt("informe a idade :"))
+    const anosQueFaltam = 18 - idade
 
-    if (idade >= 18) document.write(`vc ja e maior de idade`)
-    else {
-        tempo = 18 - idade
-        //saída
-        document.write(`falta ${tempo} anos para atingir a maior idade`)
+
+    let conceito
+    if (idade >= 18) conceito = "voce ja e maior da idade"
+    else conceito = "voce nao e maior de idade"
+
+    if (idade >= 18){
+    document.write(` ${conceito}`)
     }
-
+    else {
+        document.write(`${conceito}, ainda faltam ${anosQueFaltam} para maior idade`)
+    }
 </script>
